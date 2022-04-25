@@ -113,11 +113,11 @@ int OnInit()
    //setting the type of risk management style used
    if(RiskPercentageSet == true){
       Type_of_Risk_Management_Used = " Percentage Risk Mangement";
-   }
-   else if(ATRStopLoss == true){
+   }else if(ATRStopLoss == true){
       Type_of_Risk_Management_Used = " ATR Risk Management";
-   }
-   else{
+   }else if(Closure_on_Opposite_Signal == true){
+      Type_of_Risk_Management_Used = " Closure on Opposite Signal";
+   }else{
       Type_of_Risk_Management_Used = " Manual Risk Management";
    }
    
